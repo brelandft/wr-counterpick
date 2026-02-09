@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter Tool • WR Counterpick</title>
+  <meta name="description" content="Wild Rift counter tool: search an enemy champion and see lane counters instantly." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header compact">
+    <div class="nav">
+      <a class="brand" href="index.html">WR Counterpick</a>
+      <nav class="nav-links">
+        <a class="active" href="counter.html">Counter Tool</a>
+        <a href="champions.html">Champions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="panel">
+      <div class="tool-header">
+        <div>
+          <h1 class="page-title">Counter Tool</h1>
+          <p class="muted">Search the enemy champion and get counters by lane.</p>
+        </div>
+        <button id="copy-link" class="btn" type="button">Copy link</button>
+      </div>
+
+      <p id="copy-toast" class="toast hidden" role="status" aria-live="polite">Link copied!</p>
+
+      <div class="search-section">
+        <label for="champ-search">Search enemy champion</label>
+        <input
+          type="text"
+          id="champ-search"
+          placeholder="Type a champion name..."
+          autocomplete="off"
+        />
+        <ul id="search-results" aria-label="Search results"></ul>
+      </div>
+    </section>
+
+    <section id="results-section" class="panel hidden">
+      <div class="enemy-row">
+        <div id="enemy-icon" class="champ-icon champ-icon-lg" aria-hidden="true"></div>
+        <h2 id="enemy-name"></h2>
+      </div>
+
+      <div class="lane-section">
+        <h3>Top Lane Counters</h3>
+        <div id="top-counters" class="counter-list"></div>
+      </div>
+
+      <div class="lane-section">
+        <h3>Jungle Counters</h3>
+        <div id="jungle-counters" class="counter-list"></div>
+      </div>
+
+      <div class="lane-section">
+        <h3>Mid Counters</h3>
+        <div id="mid-counters" class="counter-list"></div>
+      </div>
+
+      <div class="lane-section">
+        <h3>ADC Counters</h3>
+        <div id="adc-counters" class="counter-list"></div>
+      </div>
+
+      <div class="lane-section">
+        <h3>Support Counters</h3>
+        <div id="support-counters" class="counter-list"></div>
+      </div>
+
+      <div class="disclaimer">
+        <span class="muted">Data:</span> starter dataset (manual). Stats-driven confidence coming later.
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted small">Not affiliated with Riot Games.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

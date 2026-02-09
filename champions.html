@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Champions • WR Counterpick</title>
+  <meta name="description" content="Browse Wild Rift champions and open their counters." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header compact">
+    <div class="nav">
+      <a class="brand" href="index.html">WR Counterpick</a>
+      <nav class="nav-links">
+        <a href="counter.html">Counter Tool</a>
+        <a class="active" href="champions.html">Champions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="panel">
+      <h1 class="page-title">Champions</h1>
+      <p class="muted">Search and open champion pages (shareable links).</p>
+
+      <div class="search-section">
+        <label for="champions-search">Search champions</label>
+        <input id="champions-search" type="text" placeholder="Type a champion name..." autocomplete="off" />
+      </div>
+
+      <div id="champ-grid" class="champ-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted small">Not affiliated with Riot Games.</p>
+  </footer>
+
+  <script src="champions.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Champion • WR Counterpick</title>
+  <meta name="description" content="Champion counters by lane for Wild Rift." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header compact">
+    <div class="nav">
+      <a class="brand" href="index.html">WR Counterpick</a>
+      <nav class="nav-links">
+        <a href="counter.html">Counter Tool</a>
+        <a href="champions.html">Champions</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="panel">
+      <div class="enemy-row">
+        <div id="champion-icon" class="champ-icon champ-icon-lg" aria-hidden="true"></div>
+        <div>
+          <h1 id="champion-title" class="page-title">Champion</h1>
+          <p class="muted small">Shareable page: uses <code>?name=Champion</code></p>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a id="open-in-tool" class="btn primary" href="counter.html">Open in Counter Tool</a>
+        <button id="copy-champ-link" class="btn" type="button">Copy link</button>
+      </div>
+
+      <p id="champ-toast" class="toast hidden" role="status" aria-live="polite">Link copied!</p>
+    </section>
+
+    <section class="panel">
+      <h2>Counters by lane</h2>
+
+      <div class="lane-section">
+        <h3>Top</h3>
+        <div id="c-top" class="counter-list"></div>
+      </div>
+      <div class="lane-section">
+        <h3>Jungle</h3>
+        <div id="c-jungle" class="counter-list"></div>
+      </div>
+      <div class="lane-section">
+        <h3>Mid</h3>
+        <div id="c-mid" class="counter-list"></div>
+      </div>
+      <div class="lane-section">
+        <h3>ADC</h3>
+        <div id="c-adc" class="counter-list"></div>
+      </div>
+      <div class="lane-section">
+        <h3>Support</h3>
+        <div id="c-support" class="counter-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted small">Not affiliated with Riot Games.</p>
+  </footer>
+
+  <script src="champions.js"></script>
+</body>
+</html>
