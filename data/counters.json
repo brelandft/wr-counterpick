@@ -1,42 +1,108 @@
 {
-  "Darius": {
-    "top": [
-      { "champion": "Gwen", "strength": "Strong", "notes": "Scales well; play around spacing and avoid extended pulls." },
-      { "champion": "Pantheon", "strength": "Medium", "notes": "Early pressure + stun; win lane before Darius gets comfy." },
-      { "champion": "Garen", "strength": "Skill", "notes": "Short trades and sustain; don’t give him long fights." },
-      { "champion": "Poppy", "strength": "Skill", "notes": "Stable lane; punish oversteps and play for team utility." }
-    ]
+  "meta": {
+    "game": "Wild Rift",
+    "focusLane": "top",
+    "lastUpdated": "2026-02-09",
+    "source": "manual"
   },
-  "Garen": {
-    "top": [
-      { "champion": "Gwen", "strength": "Strong", "notes": "True damage + scaling makes tanky stats less valuable." },
-      { "champion": "Darius", "strength": "Medium", "notes": "If you force extended fights, you can punish Garen." },
-      { "champion": "Pantheon", "strength": "Skill", "notes": "Win early windows; don’t let him reach free mid game." },
-      { "champion": "Poppy", "strength": "Skill", "notes": "Play clean trades and look for teamfight impact later." }
-    ]
-  },
-  "Gwen": {
-    "top": [
-      { "champion": "Pantheon", "strength": "Medium", "notes": "Pressure early; punish before Gwen hits items." },
-      { "champion": "Darius", "strength": "Skill", "notes": "Need early leads; Gwen becomes hard later." },
-      { "champion": "Garen", "strength": "Skill", "notes": "Survive lane and avoid giving Gwen free scaling." },
-      { "champion": "Poppy", "strength": "Skill", "notes": "Play for utility; Gwen’s late game is the real threat." }
-    ]
-  },
-  "Pantheon": {
-    "top": [
-      { "champion": "Garen", "strength": "Medium", "notes": "Can absorb burst and punish cooldown windows." },
-      { "champion": "Darius", "strength": "Skill", "notes": "If you survive early, longer fights favor Darius." },
-      { "champion": "Poppy", "strength": "Skill", "notes": "Spacing matchup; don’t eat free stuns." },
-      { "champion": "Gwen", "strength": "Skill", "notes": "If Pantheon doesn’t snowball, Gwen takes over later." }
-    ]
-  },
-  "Poppy": {
-    "top": [
-      { "champion": "Gwen", "strength": "Medium", "notes": "Gwen scales—deny free farm and play for team value." },
-      { "champion": "Garen", "strength": "Skill", "notes": "Stable lane; trade around his spin and passive regen." },
-      { "champion": "Darius", "strength": "Skill", "notes": "Spacing matchup; avoid extended pulls and stacks." },
-      { "champion": "Pantheon", "strength": "Skill", "notes": "Respect early burst; punish when cooldowns are down." }
-    ]
+  "champions": {
+    "Darius": {
+      "top": [
+        {
+          "champion": "Gwen",
+          "strength": "Strong",
+          "tags": ["outscale", "true-damage", "sustain"],
+          "notes": "Play around spacing and short trades early; Gwen wins once she has items."
+        },
+        {
+          "champion": "Pantheon",
+          "strength": "Medium",
+          "tags": ["early-pressure", "burst", "point-and-click-cc"],
+          "notes": "Win early windows with stun + all-in; don’t let Darius get extended fights."
+        },
+        {
+          "champion": "Garen",
+          "strength": "Skill",
+          "tags": ["short-trades", "sustain", "safe-lane"],
+          "notes": "Take short trades, reset, and avoid getting pulled into extended fights."
+        },
+        {
+          "champion": "Poppy",
+          "strength": "Skill",
+          "tags": ["tank", "peel", "stable"],
+          "notes": "Farm safely, punish oversteps, and play for teamfight impact."
+        }
+      ]
+    },
+    "Garen": {
+      "top": [
+        {
+          "champion": "Gwen",
+          "strength": "Strong",
+          "tags": ["true-damage", "outscale"],
+          "notes": "True damage and scaling punish Garen’s tankiness."
+        },
+        {
+          "champion": "Darius",
+          "strength": "Medium",
+          "tags": ["extended-fights", "lane-bully"],
+          "notes": "Force longer fights and punish when Garen wastes spin."
+        },
+        {
+          "champion": "Pantheon",
+          "strength": "Skill",
+          "tags": ["early-pressure", "burst"],
+          "notes": "Win early; if you don’t snowball, Garen becomes hard to kill."
+        }
+      ]
+    },
+    "Gwen": {
+      "top": [
+        {
+          "champion": "Pantheon",
+          "strength": "Medium",
+          "tags": ["early-pressure", "burst"],
+          "notes": "Pressure early before Gwen scales into fights."
+        },
+        {
+          "champion": "Darius",
+          "strength": "Skill",
+          "tags": ["lane-bully", "snowball"],
+          "notes": "Needs an early lead; Gwen becomes tough later."
+        }
+      ]
+    },
+    "Pantheon": {
+      "top": [
+        {
+          "champion": "Garen",
+          "strength": "Medium",
+          "tags": ["durable", "punish-cooldowns"],
+          "notes": "Absorb burst and punish when Pantheon’s stun is down."
+        },
+        {
+          "champion": "Darius",
+          "strength": "Skill",
+          "tags": ["extended-fights"],
+          "notes": "If Darius survives early, longer fights favor him."
+        }
+      ]
+    },
+    "Poppy": {
+      "top": [
+        {
+          "champion": "Gwen",
+          "strength": "Medium",
+          "tags": ["deny-scaling", "team-utility"],
+          "notes": "Don’t give free farm—play for team value while Gwen scales."
+        },
+        {
+          "champion": "Garen",
+          "strength": "Skill",
+          "tags": ["stable", "short-trades"],
+          "notes": "Trade around his spin; avoid extended damage windows."
+        }
+      ]
+    }
   }
 }

@@ -155,6 +155,14 @@ function renderLane(listEl, counters) {
     meta.appendChild(badge);
     main.appendChild(name);
     main.appendChild(meta);
+    // NEW: tags row (optional)
+if (Array.isArray(c.tags) && c.tags.length) {
+  const tags = document.createElement("div");
+  tags.className = "tag-row";
+  tags.textContent = c.tags.join(" • ");
+  main.appendChild(tags);
+}
+
     main.appendChild(notes);
 
     card.appendChild(icon);
@@ -171,8 +179,7 @@ function renderCounters(enemyChampName) {
   enemyIconEl.innerHTML = "";
   enemyIconEl.appendChild(makeIconForName(enemyChampName, "champ-icon-lg"));
 
-  const data = COUNTERS[enemyChampName] || {};
-
+  const data = (COUNTERS.champions && COUNTERS.champions[enemyChampName]) ? COUNTERS.champions[enemyChampName] : {};
   renderLane(document.getElementById("top-counters"), data.top);
   renderLane(document.getElementById("jungle-counters"), data.jungle);
   renderLane(document.getElementById("mid-counters"), data.mid);

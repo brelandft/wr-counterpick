@@ -102,6 +102,14 @@ function renderLane(listEl, counters) {
     meta.appendChild(badge);
     main.appendChild(name);
     main.appendChild(meta);
+    // NEW: tags row (optional)
+if (Array.isArray(c.tags) && c.tags.length) {
+  const tags = document.createElement("div");
+  tags.className = "tag-row";
+  tags.textContent = c.tags.join(" • ");
+  main.appendChild(tags);
+}
+
     main.appendChild(notes);
 
     card.appendChild(icon);
@@ -171,7 +179,7 @@ function initChampionPage() {
   const openBtn = document.getElementById("open-in-tool");
   if (openBtn) openBtn.href = `counter.html?enemy=${encodeURIComponent(champ.name)}`;
 
-  const data = COUNTERS[champ.name] || {};
+const data = (COUNTERS.champions && COUNTERS.champions[champ.name]) ? COUNTERS.champions[champ.name] : {};
   renderLane(document.getElementById("c-top"), data.top);
   renderLane(document.getElementById("c-jungle"), data.jungle);
   renderLane(document.getElementById("c-mid"), data.mid);
